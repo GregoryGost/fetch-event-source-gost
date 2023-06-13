@@ -25,7 +25,7 @@ In addition, this library also plugs into the browser's [Page Visibility API](ht
 
 # Install
 ```sh
-npm install @hperrin/fetch-event-source
+npm install fetch-event-source-hperrin
 ```
 
 # Usage
@@ -37,7 +37,7 @@ sse.onmessage = (ev) => {
 };
 
 // AFTER:
-import { fetchEventSource } from '@hperrin/fetch-event-source';
+import { fetchEventSource } from 'fetch-event-source-hperrin';
 
 await fetchEventSource('/api/sse', {
     onmessage(ev) {

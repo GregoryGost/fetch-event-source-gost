@@ -1,5 +1,5 @@
 {
-  "name": "@hperrin/fetch-event-source",
+  "name": "fetch-event-source-hperrin",
   "version": "3.0.0",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/hperrin/fetch-event-source#readme",
