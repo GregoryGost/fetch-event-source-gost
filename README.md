@@ -1,3 +1,11 @@
+# About this repo/package.
+
+This package only exists to bring in the changes from https://github.com/gfortaine/fetch-event-source and include the fix from https://github.com/Azure/fetch-event-source/pull/28#issuecomment-1421976714
+
+You can track those changes in the pull request: https://github.com/Azure/fetch-event-source/pull/28
+
+Once those changes are in and the pull request is closed, you should no longer user this package.
+
 # Fetch Event Source
 This package provides a better API for making [Event Source requests](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) - also known as server-sent events - with all the features available in the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
@@ -17,7 +25,7 @@ In addition, this library also plugs into the browser's [Page Visibility API](ht
 
 # Install
 ```sh
-npm install @microsoft/fetch-event-source
+npm install @hperrin/fetch-event-source
 ```
 
 # Usage
@@ -29,7 +37,7 @@ sse.onmessage = (ev) => {
 };
 
 // AFTER:
-import { fetchEventSource } from '@microsoft/fetch-event-source';
+import { fetchEventSource } from '@hperrin/fetch-event-source';
 
 await fetchEventSource('/api/sse', {
     onmessage(ev) {

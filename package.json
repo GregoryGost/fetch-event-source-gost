@@ -1,11 +1,11 @@
 {
-  "name": "@microsoft/fetch-event-source",
+  "name": "@hperrin/fetch-event-source",
   "version": "3.0.0",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
-  "homepage": "https://github.com/Azure/fetch-event-source#readme",
-  "repository": "github:Azure/fetch-event-source",
+  "homepage": "https://github.com/hperrin/fetch-event-source#readme",
+  "repository": "github:hperrin/fetch-event-source",
   "bugs": {
-    "url": "https://github.com/Azure/fetch-event-source/issues"
+    "url": "https://github.com/hperrin/fetch-event-source/issues"
   },
   "author": "Microsoft",
   "license": "MIT",
