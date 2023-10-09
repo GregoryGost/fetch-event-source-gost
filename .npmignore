@@ -8,6 +8,7 @@ src/
 jasmine.json
 tsconfig.json
 *.md
+.vscode/
 
 ## IntellIJ files
 .idea
