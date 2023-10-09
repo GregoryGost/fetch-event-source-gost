@@ -1,14 +1,6 @@
 {
   "all": true,
-  "reporter": [
-    "html",
-    "text-summary"
-  ],
-  "exclude": [
-    "coverage/",
-    "src/*.spec.ts"
-  ],
-  "require": [
-    "source-map-support/register"
-  ]
+  "reporter": ["html", "text-summary"],
+  "exclude": ["coverage/", "src/*.spec.ts"],
+  "require": ["source-map-support/register"]
 }
