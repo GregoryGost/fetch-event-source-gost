@@ -2,7 +2,15 @@
 
 This package only exists to bring in the changes from <https://github.com/GregoryGost/fetch-event-source-gost>
 
-This branch used for fix bodyTimeout ERROR
+This branch used for fix bodyTimeout ERROR `UND_ERR_BODY_TIMEOUT`
+
+- <https://github.com/nodejs/undici/issues/1865>
+- <https://undici.nodejs.org/#/docs/api/Client>
+
+Based on Forks in PR main project <https://github.com/Azure/fetch-event-source/pull/28>:
+
+- <https://github.com/hperrin/fetch-event-source> `3.0.0`
+- <https://github.com/gfortaine/fetch-event-source> `3.0.0`
 
 ## Fetch Event Source
 
