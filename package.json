@@ -1,6 +1,6 @@
 {
   "name": "@gregory-gost/fetch-event-source-gost",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/GregoryGost/fetch-event-source-gost#readme",
   "repository": "github:GregoryGost/fetch-event-source-gost",
