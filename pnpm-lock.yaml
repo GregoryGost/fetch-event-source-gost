@@ -22,10 +22,13 @@ devDependencies:
     version: 0.5.21
   tsc-multi:
     specifier: ^0.6.1
-    version: 0.6.1(typescript@4.9.5)
+    version: 0.6.1(typescript@5.2.2)
   typescript:
-    specifier: ^4.9.4
-    version: 4.9.5
+    specifier: ^5.2.2
+    version: 5.2.2
+  undici:
+    specifier: ^5.25.4
+    version: 5.25.4
 
 packages:
 
@@ -226,6 +229,11 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@fastify/busboy@2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
     dev: true
 
   /@istanbuljs/load-nyc-config@1.1.0:
@@ -1217,7 +1225,7 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tsc-multi@0.6.1(typescript@4.9.5):
+  /tsc-multi@0.6.1(typescript@5.2.2):
     resolution: {integrity: sha512-1ROeCEj7QJUdHWWhgswQpjUvTYeB8/j9zVVCeSdHPff/q7iCMImn7datQdNW05mzxu3I6F1T060COuHqfaUO3Q==}
     engines: {node: '>=10'}
     hasBin: true
@@ -1234,7 +1242,7 @@ packages:
       superstruct: 0.14.2
       supports-color: 8.1.1
       tslib: 2.6.2
-      typescript: 4.9.5
+      typescript: 5.2.2
       yargs: 16.2.0
     dev: true
 
@@ -1253,10 +1261,17 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript@4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
+
+  /undici@5.25.4:
+    resolution: {integrity: sha512-450yJxT29qKMf3aoudzFpIciqpx6Pji3hEWaXqXmanbXF58LTAGCKxcJjxMXWu3iG+Mudgo3ZUfDB6YDFd/dAw==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.0.0
     dev: true
 
   /update-browserslist-db@1.0.13(browserslist@4.22.1):
