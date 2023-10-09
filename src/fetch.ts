@@ -1,5 +1,5 @@
 import { EventSourceMessage, getBytes, getLines, getMessages } from './parse.js';
-import { fetch as uFetch, Response as uResponse } from 'undici';
+import { fetch, type Response, type RequestInit } from 'undici';
 
 export const EventStreamContentType = 'text/event-stream';
 
@@ -17,7 +17,7 @@ export interface FetchEventSourceInit extends RequestInit {
    * actually matches what you expect (and throw if it doesn't.) If not provided,
    * will default to a basic validation to ensure the content-type is text/event-stream.
    */
-  onopen?: (response: Response | uResponse) => Promise<void>;
+  onopen?: (response: Response) => Promise<void>;
 
   /**
    * Called when a message is received. NOTE: Unlike the default browser
@@ -51,7 +51,7 @@ export interface FetchEventSourceInit extends RequestInit {
   openWhenHidden?: boolean;
 
   /** The Fetch function to use. Defaults to fetch */
-  fetch?: typeof fetch | typeof uFetch;
+  fetch?: typeof fetch;
 }
 
 export function fetchEventSource(
@@ -64,6 +64,7 @@ export function fetchEventSource(
     onclose,
     onerror,
     openWhenHidden,
+    dispatcher,
     fetch: inputFetch,
     ...rest
   }: FetchEventSourceInit
@@ -161,7 +162,7 @@ export function fetchEventSource(
   });
 }
 
-function defaultOnOpen(response: Response | uResponse) {
+function defaultOnOpen(response: Response) {
   const contentType = response.headers.get('content-type');
   if (!contentType?.startsWith(EventStreamContentType)) {
     throw new Error(`Expected content-type to be ${EventStreamContentType}, Actual: ${contentType}`);

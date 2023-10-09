@@ -1,6 +1,6 @@
 {
   "name": "@gregory-gost/fetch-event-source-gost",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
   "homepage": "https://github.com/GregoryGost/fetch-event-source-gost#readme",
   "repository": "github:GregoryGost/fetch-event-source-gost",
@@ -50,15 +50,15 @@
     "prepublishOnly": "npm run build && npm run test"
   },
   "peerDependencies": {
-    "undici": "^5.25.4"
+    "undici": "5.25.4"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.6.9",
-    "jasmine": "^3.7.0",
-    "nyc": "^15.1.0",
-    "rimraf": "^3.0.2",
-    "source-map-support": "^0.5.19",
-    "tsc-multi": "^0.6.1",
-    "typescript": "^5.2.2"
+    "@types/jasmine": "5.1.0",
+    "jasmine": "5.1.0",
+    "nyc": "15.1.0",
+    "rimraf": "5.0.5",
+    "source-map-support": "0.5.19",
+    "tsc-multi": "1.1.0",
+    "typescript": "5.2.2"
   }
 }
